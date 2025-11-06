@@ -1,0 +1,16 @@
+name: Github Actions Test
+
+on:
+  push:
+    branch:
+      - main
+
+jobs:
+  Test-Deploy-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 테스트
+        run: |
+          echo "Test"
+          echo "Success"
+          
